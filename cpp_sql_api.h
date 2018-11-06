@@ -29,7 +29,7 @@ public:
 
 	void set_script_url(std::string url);
 
-	std::string sql_query(std::string db_, std::string query_, std::string fetch_cmd_);
+	std::string sql_query(std::string query_, std::string db_ = "vntu_iq", std::string fetch_cmd_ = "all");
 
 	~cpp_sql_api();
 
