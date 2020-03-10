@@ -113,9 +113,9 @@ if($query_ != "")
 			    case "fields":
 			    		print_j($result->fetch_fields());
 			    		break;
-			    default:
-			    	print("Invalid argument fetch_cmd = $fetch_cmd_");
-			    	break;
+			    default: // All
+			    		print_j($result->fetch_all());
+			    		break;
 			}
 		}
 		else
